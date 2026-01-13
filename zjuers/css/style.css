@@ -229,6 +229,7 @@ header .head-btn {
   padding-bottom: 10px !important;
 }
 
+@import url("https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont/style.css");
 .link-list-tit {
   font-size: 16px;
   font-weight: 400;
@@ -242,13 +243,14 @@ header .head-btn {
 }
 
 .link-list-a {
+  font-family: "LXGW WenKai", "LXGW Wenkai", WenKai, serif;
   background: rgba(255, 255, 255, 1);
   display: block;
   margin-bottom: 0px !important;
   text-align: center;
   line-height: 45px !important;
   border-radius: 2px;
-  font-size: 13px;
+  font-size: 14px;
   color: #808080;
   transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -261,7 +263,7 @@ header .head-btn {
 
 .link-list-a:hover {
   color: #FFF;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: bold;
   background: #459df5;
 }
