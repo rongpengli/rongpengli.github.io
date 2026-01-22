@@ -1,4 +1,4 @@
-body {
+link-list-abody {
   /*  background: rgba(255, 255, 255, 0) url('https://bing.img.run/1920x1080.php');*/
   background: #f2f2f2; 
   overflow-x: hidden;
@@ -229,7 +229,6 @@ header .head-btn {
   padding-bottom: 10px !important;
 }
 
-@import url("https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont/style.css");
 .link-list-tit {
   font-size: 16px;
   font-weight: 400;
@@ -243,7 +242,6 @@ header .head-btn {
 }
 
 .link-list-a {
-  font-family: "LXGW WenKai", "LXGW Wenkai", WenKai, serif;
   background: rgba(255, 255, 255, 1);
   display: block;
   margin-bottom: 0px !important;
