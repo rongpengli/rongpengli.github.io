@@ -361,6 +361,7 @@ const AstralStore=(()=>{
    })};
   });
   const config={...ASTRAL_DEFAULTS.config,...(input.config||{})};
+  if(Object.hasOwn(config,'syncEnabled') && typeof config.syncEnabled!=='boolean')throw Error('syncEnabled 必须为 true 或 false');
   for(const k of ['title','weatherCity'])if(typeof config[k]!=='string')throw Error(k+' 类型错误');
   for(const k of ['newTabOpen'])if(typeof config[k]!=='boolean')throw Error(k+' 类型错误');
   config.useBigImage=[0,1,2].includes(Number(config.useBigImage))?Number(config.useBigImage):2;
@@ -388,24 +389,31 @@ const AstralStore=(()=>{
   if(hadRetired){try{safeSet(KEY,JSON.stringify(normalized))}catch(e){console.warn('旧图标配置迁移未能保存',e)}}
   return normalized;
  }catch(e){console.warn('配置校验失败',e);return validate({})}}
- // Bootstrap from a static JSON file only if this origin has no saved configuration.
- // Keep legacy localStorage keys as authoritative as well.
- async function initializeFromFile(url='./AstralNewTab.json'){
-  if(safeGet(KEY)!==null || ['config','sites','css'].some(k=>safeGet(k)!==null))return false;
-  let response;
-  try{response=await fetch(url,{cache:'no-store'});}catch(e){console.info('初始配置文件不可读取，使用默认配置',e);return false}
-  if(!response.ok){if(response.status!==404)console.warn('初始配置文件读取失败：HTTP '+response.status);return false}
-  try{
-   const data=validate(await response.json());
-   // Avoid replacing settings written while the file was loading.
-   if(safeGet(KEY)!==null || ['config','sites','css'].some(k=>safeGet(k)!==null))return false;
-   safeSet(KEY,JSON.stringify(data));
-   return true;
-  }catch(e){console.warn('初始配置文件格式错误，使用默认配置',e);return false}
+ // Resolve from this script so a nested deployment and every settings page use the same preset.
+ const presetURL=new URL('../AstralNewTab.json',document.currentScript.src);
+ const hasSettings=()=>[KEY,'config','sites','css'].some(key=>safeGet(key)!==null);
+ async function readPreset(){
+  const response=await fetch(presetURL,{cache:'no-store'});
+  if(!response.ok)throw Error('无法读取预设 AstralNewTab.json');
+  const raw=await response.json();
+  if(!raw?.config||!Array.isArray(raw.sites))throw Error('预设缺少 config 或 sites');
+  return validate(raw);
+ }
+ async function initializeFromFile(){
+  if(hasSettings())return false;
+  const preset=await readPreset();
+  if(hasSettings())return false;
+  safeSet(KEY,JSON.stringify(preset));
+  return true;
+ }
+ async function restorePreset(){
+  const preset=await readPreset();
+  safeSet(KEY,JSON.stringify(preset));
+  return preset;
  }
  function write(data){const merged=validate({...read(),...data});safeSet(KEY,JSON.stringify(merged));return merged}
  function replace(data){const normalized=validate(data);safeSet(KEY,JSON.stringify(normalized));return normalized}
- function notify(message,title='提示'){let box=document.getElementById('astral-toast');if(!box){box=document.createElement('div');box.id='astral-toast';Object.assign(box.style,{position:'fixed',bottom:'24px',left:'50%',transform:'translateX(-50%)',padding:'10px 18px',background:'#20252ddd',color:'white',borderRadius:'8px',zIndex:'99999',maxWidth:'80vw',font:'14px sans-serif'});document.body.append(box)}box.textContent=title+'：'+String(message);box.hidden=false;clearTimeout(notify.timer);notify.timer=setTimeout(()=>box.hidden=true,4500)}
+ function notify(message,title='提示'){let box=document.getElementById('astral-toast');if(!box){box=document.createElement('div');box.id='astral-toast';Object.assign(box.style,{position:'fixed',bottom:'24px',left:'50%',transform:'translateX(-50%)',padding:'10px 18px',background:'var(--toast-bg,#20252ddd)',color:'var(--toast-text,white)',borderRadius:'8px',zIndex:'99999',maxWidth:'80vw',font:'14px sans-serif'});document.body.append(box)}box.textContent=title+'：'+String(message);box.hidden=false;clearTimeout(notify.timer);notify.timer=setTimeout(()=>box.hidden=true,4500)}
  function download(blob,name){const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=name;a.style.display='none';document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),30000)}
- return {read,write,replace,validate,safeGet,safeSet,initializeFromFile,notify,download,favicon,setFavicon,discoverIcon,resolveIcon,exportSitesWithIcons,defaults:ASTRAL_DEFAULTS};
+ return {read,write,replace,validate,safeGet,safeSet,initializeFromFile,restorePreset,notify,download,favicon,setFavicon,discoverIcon,resolveIcon,exportSitesWithIcons,defaults:ASTRAL_DEFAULTS};
 })();

@@ -3,6 +3,7 @@
 const $id=id=>document.getElementById(id);
 const LAST_MODIFY_CSS_VERSION='27.31';
 (async()=>{
+ try{await AstralStore.initializeFromFile()}catch(error){AstralStore.notify(error.message,'预设加载失败');return}
  const saved=AstralStore.read().css,editor=$id('index-css');
  editor.value=saved.index||'';
  const adjust=()=>{editor.rows=Math.max(12,editor.value.split('\n').length)};

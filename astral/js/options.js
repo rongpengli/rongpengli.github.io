@@ -8,7 +8,7 @@
 
 //简化函数
 const $id = id => { const element=document.getElementById(id); if(!element) throw new Error('缺少页面元素 #'+id+'，请强制刷新以更新 HTML 和 JS'); return element; };
-const DEFAULT_CONFIG = AstralStore.defaults;
+
 let upload = $id('upload');
 
 let myNewTabWE = {
@@ -18,7 +18,7 @@ let myNewTabWE = {
 	notify: (message,title) => AstralStore.notify(message,title),
 
 	//获取参数
- getStorage: async () => {const data=AstralStore.read();myNewTabWE.config=data.config;myNewTabWE.sites=data.sites},
+ getStorage: async () => {await AstralStore.initializeFromFile();const data=AstralStore.read();myNewTabWE.config=data.config;myNewTabWE.sites=data.sites},
  setStorage: isConfig => {try{const saved=AstralStore.write(isConfig?{config:myNewTabWE.config}:{sites:myNewTabWE.sites});if(isConfig)myNewTabWE.config=saved.config;const el=document.getElementById('save-status');if(el){el.textContent='已保存';clearTimeout(myNewTabWE.saveStatusTimer);myNewTabWE.saveStatusTimer=setTimeout(()=>el.textContent='',1800)}return true}catch(e){const el=document.getElementById('save-status');if(el)el.textContent='保存失败';const previous=AstralStore.read();myNewTabWE.config=previous.config;myNewTabWE.sites=previous.sites;AstralStore.notify(e.message,'保存失败');queueMicrotask(()=>{myNewTabWE.initConf();myNewTabWE.renderSites()});return false}},
 
  //初始化导入导出功能
@@ -148,9 +148,11 @@ let myNewTabWE = {
             if(myNewTabWE.editing||!await myNewTabWE.confirmDefaults())return;
             try{
                 myNewTabWE.cancelLocation?.();for(const id of ['weather-city','weather-lat','weather-lon'])delete $id(id).dataset.dirty;
-                myNewTabWE.config=structuredClone(DEFAULT_CONFIG.config);
-                if(!myNewTabWE.setStorage(true))return;
-                myNewTabWE.initConf();dispatchEvent(new StorageEvent('storage',{key:'astral.web.settings.v1'}));dispatchEvent(new Event('astral-defaults-restored'));
+                const saved=await AstralStore.restorePreset();
+                myNewTabWE.config=saved.config;
+                myNewTabWE.sites=saved.sites;
+                myNewTabWE.initConf();
+                myNewTabWE.renderSites();
             }catch(error){myNewTabWE.notify(error.message,'恢复默认失败')}
         });
 		$id('newtab-open').addEventListener('click', e => {
