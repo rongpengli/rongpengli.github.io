@@ -1,149 +1,181 @@
 {
   "config": {
-    "newTabOpen": true,
-    "title": "Astral New Tab",
+    "newTabOpen": false,
+    "title": "HAPPY 365",
     "useBigImage": 2,
-    "bingMaxHistory": 8,
-    "weatherLatitude": 30.16890420177631,
-    "weatherLongitude": 120.06808890873978,
+    "bingMaxHistory": 2,
+    "weatherLatitude": 30.16917945746593,
+    "weatherLongitude": 120.068511512343,
     "weatherCity": "杭州市",
     "weatherMode": "native",
-    "weatherLocationMode": "auto"
+    "weatherLocationMode": "auto",
+    "autoChange": true,
+    "autoDownload": false,
+    "downloadDir": "bingImg",
+    "userImage": false,
+    "userImageSrc": ""
   },
   "sites": [
     {
+      "_syncId": "246ddc10-0199-4f57-8454-99ff1103e873",
       "list": [
         {
-          "title": "iCloud",
-          "url": "https://www.icloud.com/mail/"
+          "_syncId": "706d6aeb-98d9-423d-87a0-3399945aa3dd",
+          "title": "学习强国",
+          "url": "https://www.xuexi.cn/index.html"
         },
         {
-          "title": "Overleaf",
-          "url": "https://www.overleaf.com/\t"
+          "_syncId": "e10d103a-80e4-4695-9d40-7a3d9552798c",
+          "title": "腾讯网",
+          "url": "https://www.qq.com/"
         },
         {
-          "title": "WPS",
-          "url": "https://365.kdocs.cn/latest"
-        },
-        {
-          "title": "EDAS",
-          "url": "https://edas.info/"
-        },
-        {
-          "title": "OpenReview",
-          "url": "https://openreview.net/"
-        },
-        {
-          "icon": "data:image/webp;base64,UklGRi4EAABXRUJQVlA4WAoAAAAwAAAAHwAAHwAASUNDUMgBAAAAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADZBTFBIKAEAAA2Qc1vbsUfnVWzbtq3ObtWZPyQrVTq1Ke0xOts2YycvBm9YThURE8CZFWwBfdvMRgS2dRPLBmvGviSXuwPqk/Fl8K8Mk4Bfizf+sWqVGQ2r+r4HSN6WAyuxDUs7GuAYsHAFEL0V1a1uae6h7pYV5Juzc6Vz5/bFDYvYdJeY7MElQJOM5lu9io2wt1Uf51Tt/KP/g6Osr0U0SQX6df6V3NttgI3nX9uVhLS+ZUD9dLMixrJo0USckfh3fzbD13ZlGNMXb4tJfHLwD5cwX1qK4IFgxq00vFd2TX4dYnzz5huH/vDAZl81MQ5hzxLtMFVGMPgfUALBOEQEUT9EAEkD46eKG4eub2LHofu/kJ1gd0TF77BzT4k+7OMYshXsDm9zxMX7HPHTKGcSVlA4IBABAADwBwCdASogACAAPmEqkUWkIqGYDAQAQAYEtjSyplsvbOX2Z3JL/gPUz/gHSV8AB+uXoZ/qB8C/7M/tV7OI9AAMP7eLxcrJKAAA/q+tFYPEvLtpRTYkaj4xOPgegFY7Y9/g+JTCt9V0XeGAv/+xvv30L7Tf/68zqruS7+89jUj/9oPAsNTgjbzqc12dGhjvX6mUHOllbxlQV8fItD/a1arLkwFEr5vr+A4Gz4N2rP/zKEgYR8LgSvdZY497XPv5vawkCHdy4O/4QYzEVeo9bLhzebHSC7YifvEVvi+FChjeoXdL8D1XGlCINPYscpuZeMehlWmIkzIyFDGBaxJlO6GAzGaMQWQ6R9oD5cM/5e7oAA==",
-          "title": "编程音乐",
-          "url": "https://musicforprogramming.net/latest/"
-        }
-      ],
-      "name": "创作"
-    },
-    {
-      "list": [
-        {
-          "title": "IEEE",
-          "url": "http://ieeexplore.ieee.org/"
-        },
-        {
-          "title": "alphaXiv",
-          "url": "https://www.alphaxiv.org/"
-        },
-        {
-          "title": "Scholar",
-          "url": "http://scholar.google.com/"
-        },
-        {
-          "title": "Nature",
-          "url": "https://www.nature.com/"
-        },
-        {
-          "title": "NMI",
-          "url": "https://www.nature.com/natmachintell/"
-        },
-        {
-          "title": "NC",
-          "url": "https://www.nature.com/ncomms/"
-        }
-      ],
-      "name": "学术"
-    },
-    {
-      "list": [
-        {
+          "_syncId": "88de720e-286b-40b2-8563-b7520c944ab9",
           "title": "凤凰网",
           "url": "https://www.ifeng.com/"
         },
         {
-          "title": "163",
-          "url": "https://www.163.com/"
-        },
-        {
+          "_syncId": "2466d4bc-0360-4cf4-a007-7356c7f76a82",
           "title": "WSJ",
           "url": "https://www.wsj.com/"
         },
         {
-          "title": "学习强国",
-          "url": "https://www.xuexi.cn/index.html\t"
-        },
-        {
-          "title": "RSS",
-          "url": "https://rss.woodpeckersnest.space/"
-        },
-        {
+          "_syncId": "9af0b59e-e984-49ba-ba53-af3ff47ba343",
           "title": "微信读书",
           "url": "https://weread.qq.com/"
+        },
+        {
+          "_syncId": "ba92a17f-ee07-4692-9619-71e0371eab38",
+          "title": "知乎",
+          "url": "https://www.zhihu.com/"
         }
       ],
       "name": "资讯"
     },
     {
+      "_syncId": "070a4ec6-aed4-4e43-87ad-722be07af6be",
       "list": [
         {
-          "title": "Journey",
-          "url": "https://journey.cloud/timeline"
+          "_syncId": "465bb14a-f33c-464f-853c-ccfff3896503",
+          "title": "iCloud",
+          "url": "https://www.icloud.com/mail/"
         },
         {
-          "title": "V2EX",
-          "url": "https://v2ex.com/?tab=all"
+          "_syncId": "2b0df5dc-959e-4d70-b364-c1a5577f0f24",
+          "title": "WPS",
+          "url": "https://365.kdocs.cn/latest"
         },
         {
+          "_syncId": "dedc1166-d9d2-4148-bac4-d3664458a216",
+          "title": "Overleaf",
+          "url": "https://www.overleaf.com/"
+        },
+        {
+          "_syncId": "b6509773-1577-48f1-b2ee-e095fce2ec9c",
+          "title": "LaTeX",
+          "url": "https://www.latexlive.com/"
+        },
+        {
+          "_syncId": "e94e8341-fa5e-40e8-a2e7-389930c4d53e",
+          "title": "GitHub",
+          "url": "https://github.com/"
+        }
+      ],
+      "name": "创作"
+    },
+    {
+      "_syncId": "de63e6f1-6aa6-45ac-a48a-0bbff3242609",
+      "list": [
+        {
+          "_syncId": "a85551d3-0b60-4fe3-a742-0510d417fe73",
+          "title": "Scholar",
+          "url": "http://scholar.google.com/"
+        },
+        {
+          "_syncId": "a7aae77f-cd24-4c74-b832-8d7e99a70fff",
+          "title": "WoS",
+          "url": "https://www.webofscience.com/"
+        },
+        {
+          "_syncId": "fd0f2b05-2798-4ba7-8d97-5c24852aadc9",
+          "title": "alphaXiv",
+          "url": "https://www.alphaxiv.org/"
+        },
+        {
+          "_syncId": "013dc1af-e421-4320-bc9d-06e8f9e49ddf",
+          "title": "IEEE",
+          "url": "http://ieeexplore.ieee.org/"
+        },
+        {
+          "_syncId": "f9314617-d643-4ee9-be54-001e8d639efc",
+          "title": "Nature",
+          "url": "https://www.nature.com/"
+        },
+        {
+          "_syncId": "f0ba6db3-146a-4d0c-8ddc-37393fd181d6",
+          "title": "Wolfram",
+          "url": "https://www.wolframalpha.com/"
+        }
+      ],
+      "name": "学术"
+    },
+    {
+      "_syncId": "b4f406af-d8e6-45d2-9d12-4c29f6468998",
+      "list": [
+        {
+          "_syncId": "1640eb98-4cb6-4dfe-9ce2-8b785544a2cb",
           "title": "Twitter",
           "url": "https://twitter.com/"
         },
         {
-          "icon": "data:image/webp;base64,UklGRkgFAABXRUJQVlA4WAoAAAAwAAAAHwAAHwAASUNDUMgBAAAAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADZBTFBIwgEAAA2QLUm2aVt1bNv2tW3btm3btm2bT7Zt27Y9x1xrX3xAREwA/08Ph28vv1kutGYJH2veHV62x0LNGgLYhGSv8qDjfQtYj3FAa12lQYur5nphOKVPk1dmshQ2RoZSA8x0wGzT7VeMBaSRbm3yL2uvuBRfZSwF8WpDHntOtQEo5plidXbzG024tARYnD1aydMcUoV3OCQ5SY4fwfkHBlP373BTeOkp1L54hKoYDq41QjibaKsELb7dub7mwoBUXW0puue9cuF1VgXX9W3QDudslTS4fv2ofB3cy0bZ8n2HLvvRsHfw2e2TwpaDvYGP3Qaib9r0AxC6eOw6hQF23WFiUF/pXgikQo0bvHCj8qPns1GvZ01HvFOrUW20dkP7vUWdsTw0Ja80CmLg0+RTpStBfOh2gSOv1yGeP2BVGBj1gI3NCkKuvRIFnKWB2LkD24A9ucHnmWTTE3HvQ76+9IVSm7DOAdxBro74fSD82FYI2iSfKQp836rxeuGlbLYC5pb2xbZhaoD11pqJixrUceLzcIDbo0bbIZ6cjf7K6HNtKq1EXLqqfyrg5bK1GD42/HmUxMbB3pkcrpzC9Hb073Yf/cT/ElZQOCCQAQAAUAsAnQEqIAAgAD5ZJJBFI6IiGAYAOAWEtgBOmZoYG8r/ID9ZuYM2S7x5OfzK8qu8Af4DdAfsBvgH66dYB6AH6welH+xHwDfst+43s7vqpRJaQB+oDXgXhtRRm1JotgNkmKAAAP7UK7ogALzt4Z+FwtbNMDBgqH1Rt+gn+C+5c11f/OYXNzj72KYuvFcC/7r4wK0+2N+qLh34xl20LH/7lPevBcD153+6on+K7v/4mPam8uB6iL3DGP+4D8lJu+e/KIX/C3OECZaqVik/rnjioPm/BafIttAndahx48PdvwlrXkLeNFPLiuh0NfqMgzl0qppKPUT6zW8uRGVVKMaX7XlsNaB4K1Og6z1TlUIuxlteOzGAxOX7to9rbZZAQxPhf+X4nX9uk1kx58ehPLhlNhta6HbRnGK/DxS8DWu7Ln+GhQ5be/yFcpYtnVDObO/opvKOXnomlMupWE8jTwLewuw+zOhnDm0LLY0gjrKFgdw5NV76tKbR7fYIzAejyzuMEz8sHDSoYC+fEw2K2UAAAA==",
-          "title": "CC98",
-          "url": "https://www.cc98.org/"
+          "_syncId": "9f2d2b04-60c3-4545-add3-e2d897240746",
+          "title": "小红书",
+          "url": "https://www.xiaohongshu.com/"
         },
         {
+          "_syncId": "46eb3195-5140-4ac4-87cb-f1315b53d5d1",
+          "title": "Journey",
+          "url": "https://journey.cloud/timeline"
+        },
+        {
+          "_syncId": "1698ccb2-ee43-460b-8681-5e569dee1e2b",
+          "title": "V2EX",
+          "url": "https://v2ex.com/?tab=all"
+        },
+        {
+          "_syncId": "b00298b7-3f48-4447-a01f-1ddbfd4dad78",
           "title": "Hacker",
           "url": "https://news.ycombinator.com/"
         },
         {
-          "title": "小红书",
-          "url": "https://www.xiaohongshu.com/"
+          "_syncId": "f199610b-2ef9-4640-92ce-5d37c469b268",
+          "icon": "data:image/webp;base64,UklGRl4FAABXRUJQVlA4WAoAAAAwAAAAHwAAHwAASUNDUMgBAAAAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADZBTFBIwgEAAA2QLUm2aVt1bNv2tW3btm3btm2bT7Zt27Y9x1xrX3xAREwA/08Ph28vv1kutGYJH2veHV62x0LNGgLYhGSv8qDjfQtYj3FAa12lQYur5nphOKVPk1dmshQ2RoZSA8x0wGzT7VeMBaSRbm3yL2uvuBRfZSwF8WpDHntOtQEo5plidXbzG024tARYnD1aydMcUoV3OCQ5SY4fwfkHBlP373BTeOkp1L54hKoYDq41QjibaKsELb7dub7mwoBUXW0puue9cuF1VgXX9W3QDudslTS4fv2ofB3cy0bZ8n2HLvvRsHfw2e2TwpaDvYGP3Qaib9r0AxC6eOw6hQF23WFiUF/pXgikQo0bvHCj8qPns1GvZ01HvFOrUW20dkP7vUWdsTw0Ja80CmLg0+RTpStBfOh2gSOv1yGeP2BVGBj1gI3NCkKuvRIFnKWB2LkD24A9ucHnmWTTE3HvQ76+9IVSm7DOAdxBro74fSD82FYI2iSfKQp836rxeuGlbLYC5pb2xbZhaoD11pqJixrUceLzcIDbo0bbIZ6cjf7K6HNtKq1EXLqqfyrg5bK1GD42/HmUxMbB3pkcrpzC9Hb073Yf/cT/ElZQOCCmAQAA8AoAnQEqIAAgAD5hJI9FJCGhGAwGAEAGBLYATpmaGBvFvwv/Y7+zc+5s2Y3dR/5zaAP7xugN0A/ZnrAPQA/VX0oP2l+An9mf269nfNAC+bMwD9M2ukLZBU3uywZuAQAAAP2fcrbuVQsauxA72M8UbTPLRWwvehxexeUT4sgovGwgUmjgTWtCDP/5NHZp/K2rVTWf1T/GBXtd7+Ws/h34wrimqf/7e/r3wTxhxxZgwHIEv3//iY/2pvLgdad/244X/cB+SfYzw/A7sP8+B4o4akjiKUCkCL12k3nzrxzCUL15AFSsr3XhFvndYpfwcxT+NnPL3fwFOz6bFmuLRZn2fvdcEEkX7n0eFb5MqTHx/tE3U3B0YXGsjuunfJAv7G2nnd6OqVaDqzMMrq5Fj6YEi4LZzR/mP3r+p6LSa7pJmRmdniqI20SsiKUU6ij2DQNt9xP4ZZknF9cK1PMuatZVR/mH8b7uzR9B1S7WbactzT+YZ3wOtD8UBQyzryqqVdK084o/lGtV3sKXvUhOdRL/9bMuXQzwQ7+MFPRDrsWK/Ux/pxHnAAA=",
+          "title": "CC98",
+          "url": "https://www.cc98.org/"
         }
       ],
       "name": "自媒体"
     },
     {
+      "_syncId": "7a41b215-e24e-488a-96af-9e0cb26b18bf",
       "list": [
         {
+          "_syncId": "38408206-6e15-422a-9237-a68211c66341",
           "title": "ChatGPT",
           "url": "https://chat.openai.com/"
         },
         {
+          "_syncId": "288cf351-28f4-426d-a8d5-4c086828a522",
           "title": "Gemini",
           "url": "https://gemini.google.com/app"
         },
         {
+          "_syncId": "679bb52b-b586-4989-a3c0-d5beca27d1aa",
           "title": "Grok",
           "url": "https://grok.com/chat"
         },
         {
+          "_syncId": "599c0619-c28c-4668-9478-f452f0cce878",
           "title": "DeepSeek",
           "url": "https://chat.deepseek.com/"
         }
@@ -151,135 +183,279 @@
       "name": "GenAI"
     },
     {
+      "_syncId": "13a3271b-2a93-4723-b727-00b646d345a0",
       "list": [
         {
+          "_syncId": "22de9129-9220-4b26-911f-55587a65c0b5",
           "icon": "http://kyfw.zju.edu.cn/favicon.ico",
           "title": "科研",
           "url": "http://kyfw.zju.edu.cn/srm/systemrole/login_toLogin.html"
         },
         {
+          "_syncId": "336e6b35-618c-4d87-be74-ffb7fa071dc2",
           "icon": "http://kyfw.zju.edu.cn/favicon.ico",
           "title": "财务",
           "url": "http://cwcx.zju.edu.cn/WFManager/login.jsp"
         },
         {
+          "_syncId": "edc50cd6-9a37-4486-9d55-234b6a424e21",
           "icon": "http://kyfw.zju.edu.cn/favicon.ico",
           "title": "查新",
           "url": "http://cx.zju.edu.cn/"
         },
         {
-          "title": "邮件",
-          "url": "https://mail.zju.edu.cn/"
-        },
-        {
-          "icon": "http://kyfw.zju.edu.cn/favicon.ico",
-          "title": "百事通",
-          "url": "https://s.zju.edu.cn/"
-        },
-        {
+          "_syncId": "e02b66aa-7900-4dad-984d-0021e390ea5a",
           "icon": "http://kyfw.zju.edu.cn/favicon.ico",
           "title": "设备管理",
           "url": "https://zjuam.zju.edu.cn/cas/login?service=http%3A%2F%2Fequipinfo.zju.edu.cn%2Fsfw_jz%2Findex.jsp"
+        },
+        {
+          "_syncId": "083fb44d-2a45-40a7-b071-8978eb0c0a17",
+          "title": "服务平台",
+          "url": "http://kyfw.zju.edu.cn/favicon.ico"
+        },
+        {
+          "_syncId": "54c011c7-fef3-47ea-b7d6-834d62e74c4a",
+          "title": "邮件",
+          "url": "https://mail.zju.edu.cn/"
         }
       ],
       "name": "校内办事"
     },
     {
+      "_syncId": "37adc094-45ef-4ece-8195-5faf8ea4eb1c",
       "list": [
         {
+          "_syncId": "c53b2742-eeef-4c12-8c99-f1ed1a70f3f5",
           "icon": "http://kyfw.zju.edu.cn/favicon.ico",
           "title": "本科生",
           "url": "http://zdbk.zju.edu.cn"
         },
         {
-          "icon": "data:image/webp;base64,UklGRngDAABXRUJQVlA4WAoAAAAwAAAAHwAAHwAASUNDUMgBAAAAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADZBTFBI3wAAAAFPQJBtGzvCDD6ERUQM6SFwUG1bU4EWWAVwBPDym2BkwATgMcC4RKCAIy77jgIR/Wfktm0k9dRZZEDPQNGTUQCAJtcmZwATLoQQrNYmZyDpzud5nhW0yRlI4xC+32ph9Xar41ZzktHxkn2TD5ecLtlihLpzTZ3/wPo+IBvsBQcgm/lE7wbQKmf3Y+wbddyyHz0R2W45XWrZ3Q6mm42kjtvr5iKnK4Rda/xuHuUQ+sSsRkQBvIB/x0awIh8byXYIdnbSzTSCbF8OhAshWM1ZQjhLEMooADQ5bXBGG4yiBwEAVlA4IKIAAABwBgCdASogACAAPmEskUakIiGhKAgAgAwJZACpI4H5BRAPkArgD+AdKBwAH65elx+pPwAftV6MwEgw1nAA/uqli3/z0z4/wEmb3Mi0h8zP/ppH8aR3SoFcJ71L+LxB1chr5ponfRptXPG3rcQ6nTGmEGbtdz7YY2YNto8vpsRRbOMscXeI14ULBdC2I2UWvEvMXljVh4Yej8TibWNmKqDbwAA=",
+          "_syncId": "ca929a4c-7226-4fcc-a89b-aae1453f9484",
+          "icon": "data:image/webp;base64,UklGRnoDAABXRUJQVlA4WAoAAAAwAAAAHwAAHwAASUNDUMgBAAAAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADZBTFBI3wAAAAFPQJBtGzvCDD6ERUQM6SFwUG1bU4EWWAVwBPDym2BkwATgMcC4RKCAIy77jgIR/Wfktm0k9dRZZEDPQNGTUQCAJtcmZwATLoQQrNYmZyDpzud5nhW0yRlI4xC+32ph9Xar41ZzktHxkn2TD5ecLtlihLpzTZ3/wPo+IBvsBQcgm/lE7wbQKmf3Y+wbddyyHz0R2W45XWrZ3Q6mm42kjtvr5iKnK4Rda/xuHuUQ+sSsRkQBvIB/x0awIh8byXYIdnbSzTSCbF8OhAshWM1ZQjhLEMooADQ5bXBGG4yiBwEAVlA4IKQAAABwBgCdASogACAAPmEskkakIiGhKAgAgAwJZACpI7F5BRAPkArgD+AdKBwAH65elj+sHwAftl6MwEgiDQAA/um1XP/npn0TkZ4YOMx/n5Of/TSP40jwxf89Hawz8LCm1zEOxYL/QlQqfpW3rcRVbLI7QXxlD0bCF7EptgfO/4AeqP22MOUeIVoM1Z8+cQj49uDdYoVISxqw1kmkL/4tY7xLaZ8QAA==",
           "title": "研究生",
           "url": "https://yjsy.zju.edu.cn"
         },
         {
-          "icon": "data:image/webp;base64,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",
+          "_syncId": "f36d7336-5a2e-49f0-90c5-203442f0c752",
           "title": "学在浙大",
           "url": "http://course.zju.edu.cn/"
         },
         {
+          "_syncId": "a0049585-ee73-48db-87d5-92b779062c97",
           "title": "语雀",
           "url": "https://yuque.zju.edu.cn/zjunice"
         },
         {
+          "_syncId": "37639baf-2add-44ef-a36d-2b0c18fde2c4",
+          "icon": "https://zjuam.zju.edu.cn/favicon.ico",
           "title": "校历",
-          "url": "https://rongpeng.info/images/pdfs/zjucalendar.pdf",
-          "icon": "https://zjuam.zju.edu.cn/favicon.ico"
-        },
-        {
-          "title": "ZJUers",
-          "url": "https://rongpeng.info/zjuers/"
+          "url": "https://rongpeng.info/images/pdfs/zjucalendar.pdf"
         }
       ],
       "name": "教育教学"
     },
     {
+      "_syncId": "95b946f7-8b11-4e86-98c0-5bfd7a6577d9",
       "list": [
         {
+          "_syncId": "e9701383-a84f-4dba-b9ab-a83f0e83cc98",
+          "title": "EDAS",
+          "url": "https://edas.info/"
+        },
+        {
+          "_syncId": "a2531935-f0b3-44d9-bbb9-571eb8ecc199",
+          "title": "OpenReview",
+          "url": "https://openreview.net/"
+        },
+        {
+          "_syncId": "d6a8fbc1-c38c-42e6-a381-3bf6d2e9f3aa",
+          "icon": "https://cdn-icons-png.flaticon.com/512/861/861991.png",
+          "title": "NC投稿",
+          "url": "https://mts-ncomms.nature.com/"
+        },
+        {
+          "_syncId": "7dddb269-d814-4599-8bb4-f57b46ddfa93",
+          "icon": "https://cdn-icons-png.flaticon.com/512/861/861991.png",
+          "title": "ChinaCom",
+          "url": "https://mc03.manuscriptcentral.com/chinacomm/"
+        },
+        {
+          "_syncId": "72a5e21b-1cea-4c54-8302-e8d2f835e21f",
+          "icon": "https://cdn-icons-png.flaticon.com/512/861/861991.png",
+          "title": "NF",
+          "url": "https://mc04.manuscriptcentral.com/nf-iop/"
+        },
+        {
+          "_syncId": "8bae9766-64e5-40de-b0f2-ac16f5fbc6f4",
+          "icon": "https://cdn-icons-png.flaticon.com/512/861/861991.png",
+          "title": "Author Portal",
+          "url": "https://ieee.atyponrex.com/"
+        }
+      ],
+      "name": "投稿审稿"
+    },
+    {
+      "_syncId": "aef03efd-d13a-4a44-b38a-f258e0ed07c4",
+      "list": [
+        {
+          "_syncId": "80b57c45-c4c9-4a07-9642-0a4b55f13283",
           "icon": "http://kyfw.zju.edu.cn/favicon.ico",
           "title": "求是新闻",
           "url": "http://www.news.zju.edu.cn/"
         },
         {
+          "_syncId": "e7f85eeb-40b1-4912-8b46-3e264d517291",
           "icon": "http://kyfw.zju.edu.cn/favicon.ico",
           "title": "科研院",
           "url": "http://rd.zju.edu.cn/nopermit_zjusub.jsp?_p=YXM9MQ__&parentUrl=http%3A%2F%2Frd.zju.edu.cn%2Frdoffice%2Fmain.htm"
         },
         {
+          "_syncId": "061a68b7-6023-45de-9330-70b93b4a054f",
           "icon": "http://kyfw.zju.edu.cn/favicon.ico",
           "title": "财务处",
           "url": "http://cw.zju.edu.cn/"
         },
         {
+          "_syncId": "50baa54d-2bf4-422f-9734-506c7a536314",
           "icon": "http://kyfw.zju.edu.cn/favicon.ico",
           "title": "综合服务",
           "url": "http://zhfw.zju.edu.cn/"
         },
         {
+          "_syncId": "ce912ce7-9f1c-4c99-a006-0c9af8c18e19",
           "icon": "http://kyfw.zju.edu.cn/favicon.ico",
           "title": "信电学院",
           "url": "http://www.isee.zju.edu.cn/51183/list.psp"
         },
         {
+          "_syncId": "1093d4af-8fe6-4c31-854a-df90fe3b307a",
           "icon": "http://kyfw.zju.edu.cn/favicon.ico",
           "title": "信通系",
           "url": "http://www.ice.zju.edu.cn/"
-        }
-      ],
-      "name": "浙大新闻"
-    },
-    {
-      "list": [
-        {
-          "title": "京东",
-          "url": "https://www.jd.com/"
         },
         {
+          "_syncId": "6fba7e65-6932-46a9-812b-ab875e9b4c4e",
+          "icon": "http://kyfw.zju.edu.cn/favicon.ico",
+          "title": "图书馆",
+          "url": "https://libweb.zju.edu.cn/"
+        },
+        {
+          "_syncId": "c209826a-d75e-4e0c-b012-a6b77fb4b89d",
+          "title": "校园地图",
+          "url": "https://map.zju.edu.cn/"
+        },
+        {
+          "_syncId": "103fef1e-cd0b-4590-9578-16f6a20ac0db",
+          "title": "WebVPN",
+          "url": "https://webvpn.zju.edu.cn/login"
+        },
+        {
+          "_syncId": "adec771b-0c99-4360-bd72-cbfdb4602c68",
+          "title": "网费",
+          "url": "https://myvpn.zju.edu.cn/"
+        },
+        {
+          "_syncId": "fa359614-c059-4bc1-9f2f-4476e02f8041",
+          "title": "正版软件",
+          "url": "https://ms.zju.edu.cn/"
+        }
+      ],
+      "name": "浙大信息"
+    },
+    {
+      "_syncId": "5916f20d-c0e0-4b92-b40f-e2e1fb0c7f17",
+      "list": [
+        {
+          "_syncId": "8de33f42-2993-47cb-a328-b836bf2f3c13",
           "title": "腾讯视频",
           "url": "https://v.qq.com/"
         },
         {
-          "title": "Bilibili",
-          "url": "https://www.bilibili.com/"
+          "_syncId": "c47a4f85-3306-4794-8333-2fe03edff1ee",
+          "title": "爱奇艺",
+          "url": "https://www.iqiyi.com/"
         },
         {
+          "_syncId": "2e7f695b-dbb9-434c-a4f0-f0128623651c",
           "title": "优酷",
           "url": "https://www.youku.com"
         },
         {
+          "_syncId": "c9b6444b-9062-4cee-9186-00db527e4a15",
+          "title": "芒果TV",
+          "url": "https://www.mgtv.com/"
+        },
+        {
+          "_syncId": "96f0b2b5-ab37-41d9-ab39-4474879a27c4",
+          "title": "Bilibili",
+          "url": "https://www.bilibili.com/"
+        },
+        {
+          "_syncId": "90e602fb-7415-45f9-8259-e32c325f7b2b",
           "title": "YouTube",
           "url": "https://www.youtube.com/"
         },
         {
+          "_syncId": "1fb9888e-456c-43cd-83f1-2c2d383ea4b5",
+          "title": "CCTV",
+          "url": "https://tv.cctv.com/"
+        },
+        {
+          "_syncId": "ce927c3d-88b7-4c79-aa2c-69c8893e5080",
           "title": "Music",
           "url": "http://music.youtube.com"
+        },
+        {
+          "_syncId": "dc559d9a-a499-4f80-9f2c-956d502cf917",
+          "icon": "data:image/webp;base64,UklGRjoEAABXRUJQVlA4WAoAAAAwAAAAHwAAHwAASUNDUMgBAAAAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADZBTFBIKAEAAA2Qc1vbsUfnVWzbtq3ObtWZPyQrVTq1Ke0xOts2YycvBm9YThURE8CZFWwBfdvMRgS2dRPLBmvGviSXuwPqk/Fl8K8Mk4Bfizf+sWqVGQ2r+r4HSN6WAyuxDUs7GuAYsHAFEL0V1a1uae6h7pYV5Juzc6Vz5/bFDYvYdJeY7MElQJOM5lu9io2wt1Uf51Tt/KP/g6Osr0U0SQX6df6V3NttgI3nX9uVhLS+ZUD9dLMixrJo0USckfh3fzbD13ZlGNMXb4tJfHLwD5cwX1qK4IFgxq00vFd2TX4dYnzz5huH/vDAZl81MQ5hzxLtMFVGMPgfUALBOEQEUT9EAEkD46eKG4eub2LHofu/kJ1gd0TF77BzT4k+7OMYshXsDm9zxMX7HPHTKGcSVlA4IBwBAABwBwCdASogACAAPmEmj0UkIiEYDAYAQAYEtgBhqi+eB7yfszrjP+AdJXwAH6q+jd7Dv7O/sr7Ng9AAMP22m7G6Xq6YAAD+jVlmEYIFa56ZOL2exI8wHxj9gMbvky+1MlNzGY1RqAiFELv/2KL9Q/4Iotf/9dd//24/h747LFf/9r3SDcLybeg5nUN4w1IQbR4rO2YQPqdd3VM97jkaIRcSkv8a8vJSFF2Kr3ZCp/8yn7EDEBlUfgzqqf2SYVP/61eBwhCcQm36nNrKq8HQvUt3Cbnc3hVoXews/ziS8f+LyL33/W0eyTWEE1DnVhV12ohxyn15ZUCYQ+JGewj4jwMCZw3bx9iSvVhZ+U/8kkbLi8ttl4o4UmYz82QAAA==",
+          "title": "编程音乐",
+          "url": "https://musicforprogramming.net/latest/"
+        },
+        {
+          "_syncId": "00c12fbe-2c29-4f60-890e-112b84f31d1e",
+          "title": "京东",
+          "url": "https://www.jd.com/"
+        },
+        {
+          "_syncId": "44d90379-31bb-48b7-bb06-643c691b58bb",
+          "title": "淘宝",
+          "url": "https://www.taobao.com/"
         }
       ],
       "name": "影音购物"
+    },
+    {
+      "_syncId": "9b6a76a4-c1f5-4776-9fa8-aaba8add8a8f",
+      "list": [
+        {
+          "_syncId": "4da2dd24-9acb-441d-9fb8-c61bc747f8ec",
+          "title": "翻译",
+          "url": "https://translate.google.com/"
+        },
+        {
+          "_syncId": "bdff9b79-4522-4c50-8496-fa361a651898",
+          "title": "缩略词",
+          "url": "https://lab.magiconch.com/nbnhhsh/"
+        },
+        {
+          "_syncId": "2e7472cd-fd78-44a1-89a0-fd19aa5318ee",
+          "title": "短网址",
+          "url": "https://sina.lt/"
+        },
+        {
+          "_syncId": "bbe13c68-1637-4047-93ab-c07f4a2a4cf9",
+          "title": "二维码",
+          "url": "https://cli.im/"
+        },
+        {
+          "_syncId": "cd4a23ae-4f03-4d51-9d3f-eb5236738ea3",
+          "title": "RSS",
+          "url": "https://rss.woodpeckersnest.space/"
+        }
+      ],
+      "name": "实用工具"
     }
   ],
   "css": {
