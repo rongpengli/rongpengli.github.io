@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" href="./image/logo.png" type="image/png" />
+	</head>
+	<body>
+		<header></header>
+		<div id="date">
+			<span id="solar">
+				<span id="solar-date"></span>
+				<span id="solar-festival" class="festival"></span>
+				<span id="solar-holiday" class="holiday"></span>
+			</span>
+			<br />
+			<span id="lunar">
+				<span id="lunar-date"></span>
+				<span id="lunar-festival" class="festival"></span>
+				<span id="lunar-holiday" class="holiday"></span>
+			</span>
+		</div>
+		<div id="navs">
+			<div id="navtitle">
+                <div id="weather-container" aria-live="polite"></div>
+                <div class="nav-actions">
+                    <a href="#" id="change-wallpaper" title="在最近几天的 Bing 壁纸中切换"><img src="./image/change.svg" /><span class="action-label">切换壁纸</span></a>
+                    <a href="./html/options.html" draggable="false" target="_blank" title="网页选项"><img src="./image/config.svg" /><span class="action-label">选项</span></a>
+                </div>
+			</div>
+			<table id="navtable"></table>
+		</div>
+		<footer></footer>
+		<script src="./js/calendar.min.js"></script>
+		<script src="./js/storage.js"></script>
+        <script src="./js/wallpaper.js"></script>
+        <script src="./js/weather.js"></script>
+        <script src="./js/index.js"></script>
+	</body>
+</html>
