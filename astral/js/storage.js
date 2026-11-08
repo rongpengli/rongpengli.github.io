@@ -393,7 +393,7 @@ const AstralStore=(()=>{
  const presetURL=new URL('../AstralNewTab.json',document.currentScript.src);
  const hasSettings=()=>[KEY,'config','sites','css'].some(key=>safeGet(key)!==null);
  async function readPreset(){
-  const response=await fetch(presetURL,{cache:'no-store'});
+  const response=await fetch(presetURL,{cache:'no-store',signal:AbortSignal.timeout(10000)});
   if(!response.ok)throw Error('无法读取预设 AstralNewTab.json');
   const raw=await response.json();
   if(!raw?.config||!Array.isArray(raw.sites))throw Error('默认配置不完整，请检查选项和导航设置。');
@@ -401,9 +401,48 @@ const AstralStore=(()=>{
   Object.assign(ASTRAL_DEFAULTS,preset);
   return preset;
  }
- async function initializeFromFile(){
+ let initializing=null;
+ function initializeFromFile(){
+  if(initializing)return initializing;
+  const task=initializeLocal();
+  initializing=task.finally(()=>{initializing=null});
+  return initializing;
+ }
+ async function initializeLocal(){
+  const saved=safeGet(KEY);
+  if(saved){
+   try{
+    const data=JSON.parse(saved);
+    if(data.config&&Array.isArray(data.sites)&&data.css&&
+       Object.keys(ASTRAL_DEFAULTS.config).every(key=>Object.hasOwn(data.config,key))){
+     validate(data);
+     return false;
+    }
+   }catch{/* Validate older settings after loading their missing defaults. */}
+  }
   const preset=await readPreset();
-  if(hasSettings())return false;
+  if(hasSettings()){
+   // Re-read after awaiting the file so edits made during loading take priority.
+   // Persist normalized legacy data once, retaining explicit false and empty lists.
+   const current=safeGet(KEY);
+   let data;
+   try{
+    if(current!==null)data=JSON.parse(current);
+    else{
+     data={};
+     for(const key of ['config','sites','css']){
+      const value=safeGet(key);
+      if(value!==null)data[key]=JSON.parse(value);
+     }
+    }
+    const normalized=validate(data);
+    safeSet(KEY,JSON.stringify(normalized));
+   }catch(error){
+    // Invalid saved data must never silently turn into a new empty collection.
+    throw Error('本机配置无法读取，请检查或重新导入。'+String(error.message||error));
+   }
+   return false;
+  }
   safeSet(KEY,JSON.stringify(preset));
   return true;
  }
