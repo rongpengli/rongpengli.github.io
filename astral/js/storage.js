@@ -345,9 +345,9 @@ const AstralStore=(()=>{
  function plain(x){return x!==null&&typeof x==='object'&&!Array.isArray(x)}
  function validate(input){
   if(!plain(input))throw Error('配置必须是 JSON 对象');
-  if(input.config!==undefined&&!plain(input.config))throw Error('config 格式错误');
+  if(input.config!==undefined&&!plain(input.config))throw Error('选项区格式错误');
   if(input.css!==undefined&&!plain(input.css))throw Error('css 格式错误');
-  if(input.sites!==undefined&&!Array.isArray(input.sites))throw Error('sites 格式错误');
+  if(input.sites!==undefined&&!Array.isArray(input.sites))throw Error('导航区格式错误');
   // Older extension exports can omit icon or use null; normalize instead of rejecting the whole import.
   const sites=(input.sites||[]).map((g,i)=>{
    if(!plain(g))throw Error('第 '+(i+1)+' 个导航分组格式错误');
@@ -396,11 +396,12 @@ const AstralStore=(()=>{
   const response=await fetch(presetURL,{cache:'no-store'});
   if(!response.ok)throw Error('无法读取预设 AstralNewTab.json');
   const raw=await response.json();
-  if(!raw?.config||!Array.isArray(raw.sites))throw Error('预设缺少 config 或 sites');
-  return validate(raw);
+  if(!raw?.config||!Array.isArray(raw.sites))throw Error('默认配置不完整，请检查选项和导航设置。');
+  const preset=validate(raw);
+  Object.assign(ASTRAL_DEFAULTS,preset);
+  return preset;
  }
  async function initializeFromFile(){
-  if(hasSettings())return false;
   const preset=await readPreset();
   if(hasSettings())return false;
   safeSet(KEY,JSON.stringify(preset));

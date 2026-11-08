@@ -105,3 +105,6 @@ button {-webkit-tap-highlight-color:transparent;}
 /* Align the cropped logo and its title at every text size. */
 #logo a {display:inline-flex;align-items:center;justify-content:center;gap:.35em;line-height:1.25;opacity:1;max-width:100%;}
 #logo img {display:block;flex:0 0 auto;width:1.3em;height:1.3em;object-fit:contain;}
+
+#settings-fields {border:0;padding:0;margin:0;min-width:0;}
+#settings-fields:disabled {visibility:hidden;}

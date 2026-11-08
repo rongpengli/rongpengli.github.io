@@ -66,7 +66,7 @@ let myNewTabWE = {
 	initConf: () => {
 		$id('newtab-open').checked = myNewTabWE.config.newTabOpen;
 		$id('wallpaper-resolution').value = String(myNewTabWE.config.useBigImage);
-		$id('bing-max-history').value = String(myNewTabWE.config.bingMaxHistory || 8);
+		$id('bing-max-history').value = String(myNewTabWE.config.bingMaxHistory);
 		$id('title').value = myNewTabWE.config.title;
   if(!$id('weather-city').dataset.dirty)$id('weather-city').value=myNewTabWE.config.weatherCity;
   if(!$id('weather-lat').dataset.dirty)$id('weather-lat').value=myNewTabWE.config.weatherLatitude;
@@ -138,6 +138,7 @@ let myNewTabWE = {
         $id('open-customize').addEventListener('click',()=>window.open('./customize.html','_blank','noopener'));
 		myNewTabWE.initConf();
 		myNewTabWE.confListener();
+        $id('settings-fields').disabled=false;
 		myNewTabWE.initSites();
 		myNewTabWE.initEdit();
 	},

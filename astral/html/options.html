@@ -25,11 +25,11 @@
 				<table rules="rows">
 					<tr>
 						<td>标题</td>
-						<td><input id="edit-title" placeholder="项目主页" /></td>
+						<td><input id="edit-title" placeholder="网站标题" /></td>
 					</tr>
 					<tr>
 						<td>网址</td>
-						<td><input id="edit-url" placeholder="https://github.com/rongpengli/AuroraTab" /></td>
+						<td><input id="edit-url" placeholder="网站地址" /></td>
 					</tr>
 					<tr>
 						<td>图标</td>
@@ -60,7 +60,7 @@
         <div class="group">
             <div class="header" id="defaults-heading">恢复默认</div>
             <div class="content">
-                <p id="defaults-message">是否用预设替换当前选项、导航网址和主页样式？</p>
+                <p id="defaults-message">是否恢复默认？当前选项、导航网址和主页样式将被替换。</p>
                 <div class="dialog-confirm"><button id="defaults-confirm" type="button">确认</button><button id="defaults-cancel" type="button">取消</button></div>
             </div>
         </div>
@@ -73,12 +73,13 @@
 	<div class="group">
         <div class="header">选项<span id="save-status" role="status" aria-live="polite"></span><button id="config-default">恢复默认</button></div>
         <div class="content">
+            <fieldset id="settings-fields" disabled>
             <table rules="rows" id="config">
                 <tr>
                     <td>主页</td>
                     <td><div class="config-inline home-fields">
                         <label class="inline-choice" for="title">标题</label>
-                        <input id="title" type="text" placeholder="Astral New Tab" aria-label="主页标题" />
+                        <input id="title" type="text" placeholder="主页标题" aria-label="主页标题" />
                         <label class="inline-choice"><input id="newtab-open" type="checkbox" /> 新标签页打开链接</label>
                     </div></td>
                 </tr>
@@ -93,16 +94,16 @@
                 <tr>
                     <td>天气</td>
                     <td><div class="config-inline weather-fields">
-                        <select id="weather-mode" aria-label="天气显示方式"><option value="native" selected>开启天气</option><option value="off">关闭天气</option></select>
+                        <select id="weather-mode" aria-label="天气显示方式"><option value="native">开启天气</option><option value="off">关闭天气</option></select>
                         <span id="native-location-controls" class="config-inline weather-fields">
-                        <label class="inline-choice"><input type="radio" name="weather-location" id="location-manual" value="manual" checked> 手动</label>
+                        <label class="inline-choice"><input type="radio" name="weather-location" id="location-manual" value="manual"> 手动</label>
                         <label class="inline-choice"><input type="radio" name="weather-location" id="location-auto" value="auto"> 浏览器定位</label>
                         <button type="button" id="location-refresh" hidden>重新定位</button>
                         <span id="location-status" role="status" aria-live="polite"></span>
                         <span id="weather-manual-fields" class="config-inline weather-fields">
-                        <span class="city-search-wrap"><input id="weather-city" type="text" autocomplete="off" placeholder="城市名称（如：北京）" aria-label="天气城市名称" aria-controls="weather-candidates" aria-expanded="false" /><div id="weather-candidates" class="city-suggestions" role="listbox" hidden></div></span>
-                        <input id="weather-lat" type="number" step="any" min="-90" max="90" placeholder="纬度（如：39.9042）" aria-label="纬度" />
-                        <input id="weather-lon" type="number" step="any" min="-180" max="180" placeholder="经度（如：116.4074）" aria-label="经度" />
+                        <span class="city-search-wrap"><input id="weather-city" type="text" autocomplete="off" placeholder="城市名称" aria-label="天气城市名称" aria-controls="weather-candidates" aria-expanded="false" /><div id="weather-candidates" class="city-suggestions" role="listbox" hidden></div></span>
+                        <input id="weather-lat" type="number" step="any" min="-90" max="90" placeholder="纬度" aria-label="纬度" />
+                        <input id="weather-lon" type="number" step="any" min="-180" max="180" placeholder="经度" aria-label="经度" />
                         <button id="weather-location-save" type="button">保存位置</button>
                         </span>
                         </span>
@@ -118,6 +119,7 @@
                     </div></td>
                 </tr>
             </table>
+            </fieldset>
         </div>
     </div>
 
@@ -126,7 +128,7 @@
 		<div class="content" id="sites">
 			<div class="group" id="template-group" hidden="hidden">
 				<div class="header">
-					<span class="group-name">分组名</span>
+					<span class="group-name"></span>
 					<button class="group-delete">删除</button>
 					<button class="group-rename">编辑</button>
 					<button class="group-add">增加</button>
@@ -142,9 +144,9 @@
 							<th>操作</th>
 						</tr>
 						<tr class="template-row" hidden="hidden">
-							<td class="row-title">项目主页</td>
+							<td class="row-title"></td>
 							<td class="row-icon"><img /></td>
-							<td class="row-url">https://github.com/rongpengli/Astral</td>
+							<td class="row-url"></td>
 							<td>
 								<button class="row-up">上移</button>
 								<button class="row-down">下移</button>
