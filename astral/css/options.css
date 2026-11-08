@@ -101,3 +101,7 @@ button {-webkit-tap-highlight-color:transparent;}
  :root {--toast-bg:#353a44;--toast-text:#f3f4f6;}
  #astral-toast {border:1px solid var(--control-border);box-shadow:0 4px 16px #0006;}
 }
+
+/* Align the cropped logo and its title at every text size. */
+#logo a {display:inline-flex;align-items:center;justify-content:center;gap:.35em;line-height:1.25;opacity:1;max-width:100%;}
+#logo img {display:block;flex:0 0 auto;width:1.3em;height:1.3em;object-fit:contain;}
