@@ -1,3 +1,7 @@
+/**************************************************
+*   by rongpengli
+*   https://github.com/rongpengli/
+**************************************************/
 'use strict';
 const AstralCompat=(()=>{
  function equal(a,b){

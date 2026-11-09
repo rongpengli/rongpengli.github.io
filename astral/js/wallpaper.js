@@ -1,4 +1,7 @@
-/* Bing recent wallpapers for static hosting: CORS-aware metadata, validated fallback and IndexedDB cache. */
+/**************************************************
+*   by rongpengli
+*   https://github.com/rongpengli/
+**************************************************/
 'use strict';
 const AstralWallpaper=(()=>{
  const DB='astral-wallpaper-v1', STORE='images', META='astral.bing.metadata.v2', CURRENT='astral.wallpaper.current';
