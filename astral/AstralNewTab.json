@@ -343,21 +343,25 @@
         },
         {
           "_syncId": "c209826a-d75e-4e0c-b012-a6b77fb4b89d",
+          "icon": "https://service.zju.edu.cn/favicon.ico",
           "title": "校园地图",
           "url": "https://map.zju.edu.cn/"
         },
         {
           "_syncId": "103fef1e-cd0b-4590-9578-16f6a20ac0db",
+          "icon": "https://service.zju.edu.cn/favicon.ico",
           "title": "WebVPN",
           "url": "https://webvpn.zju.edu.cn/login"
         },
         {
           "_syncId": "adec771b-0c99-4360-bd72-cbfdb4602c68",
+          "icon": "https://service.zju.edu.cn/favicon.ico",
           "title": "网费",
           "url": "https://myvpn.zju.edu.cn/"
         },
         {
           "_syncId": "fa359614-c059-4bc1-9f2f-4476e02f8041",
+          "icon": "https://service.zju.edu.cn/favicon.ico",
           "title": "正版软件",
           "url": "https://ms.zju.edu.cn/"
         }
