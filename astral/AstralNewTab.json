@@ -189,30 +189,31 @@
       "list": [
         {
           "_syncId": "22de9129-9220-4b26-911f-55587a65c0b5",
-          "icon": "https://service.zju.edu.cn/favicon.ico",
+          "icon": "https://zjuers.com/welcome/assets/%E6%A0%A1%E5%BE%BD.png",
           "title": "科研",
           "url": "http://kyfw.zju.edu.cn/srm/systemrole/login_toLogin.html"
         },
         {
           "_syncId": "336e6b35-618c-4d87-be74-ffb7fa071dc2",
-          "icon": "https://service.zju.edu.cn/favicon.ico",
+          "icon": "https://zjuers.com/welcome/assets/%E6%A0%A1%E5%BE%BD.png",
           "title": "财务",
           "url": "http://cwcx.zju.edu.cn/WFManager/login.jsp"
         },
         {
           "_syncId": "edc50cd6-9a37-4486-9d55-234b6a424e21",
-          "icon": "https://service.zju.edu.cn/favicon.ico",
+          "icon": "https://zjuers.com/welcome/assets/%E6%A0%A1%E5%BE%BD.png",
           "title": "查新",
           "url": "http://cx.zju.edu.cn/"
         },
         {
           "_syncId": "e02b66aa-7900-4dad-984d-0021e390ea5a",
-          "icon": "https://service.zju.edu.cn/favicon.ico",
+          "icon": "https://zjuers.com/welcome/assets/%E6%A0%A1%E5%BE%BD.png",
           "title": "设备管理",
           "url": "https://zjuam.zju.edu.cn/cas/login?service=http%3A%2F%2Fequipinfo.zju.edu.cn%2Fsfw_jz%2Findex.jsp"
         },
         {
           "_syncId": "083fb44d-2a45-40a7-b071-8978eb0c0a17",
+          "icon": "https://zjuers.com/welcome/assets/%E6%A0%A1%E5%BE%BD.png",
           "title": "服务平台",
           "url": "https://service.zju.edu.cn/"
         },
@@ -229,7 +230,7 @@
       "list": [
         {
           "_syncId": "c53b2742-eeef-4c12-8c99-f1ed1a70f3f5",
-          "icon": "https://service.zju.edu.cn/favicon.ico",
+          "icon": "https://zjuers.com/welcome/assets/%E6%A0%A1%E5%BE%BD.png",
           "title": "本科生",
           "url": "http://zdbk.zju.edu.cn"
         },
@@ -251,7 +252,7 @@
         },
         {
           "_syncId": "37639baf-2add-44ef-a36d-2b0c18fde2c4",
-          "icon": "https://zjuam.zju.edu.cn/favicon.ico",
+          "icon": "https://zjuers.com/welcome/assets/%E6%A0%A1%E5%BE%BD.png",
           "title": "校历",
           "url": "https://rongpeng.info/images/pdfs/zjucalendar.pdf"
         }
@@ -301,67 +302,67 @@
       "list": [
         {
           "_syncId": "80b57c45-c4c9-4a07-9642-0a4b55f13283",
-          "icon": "https://service.zju.edu.cn/favicon.ico",
+          "icon": "https://zjuers.com/welcome/assets/%E6%A0%A1%E5%BE%BD.png",
           "title": "求是新闻",
           "url": "http://www.news.zju.edu.cn/"
         },
         {
           "_syncId": "e7f85eeb-40b1-4912-8b46-3e264d517291",
-          "icon": "https://service.zju.edu.cn/favicon.ico",
+          "icon": "https://zjuers.com/welcome/assets/%E6%A0%A1%E5%BE%BD.png",
           "title": "科研院",
           "url": "http://rd.zju.edu.cn/nopermit_zjusub.jsp?_p=YXM9MQ__&parentUrl=http%3A%2F%2Frd.zju.edu.cn%2Frdoffice%2Fmain.htm"
         },
         {
           "_syncId": "061a68b7-6023-45de-9330-70b93b4a054f",
-          "icon": "https://service.zju.edu.cn/favicon.ico",
+          "icon": "https://zjuers.com/welcome/assets/%E6%A0%A1%E5%BE%BD.png",
           "title": "财务处",
           "url": "http://cw.zju.edu.cn/"
         },
         {
           "_syncId": "50baa54d-2bf4-422f-9734-506c7a536314",
-          "icon": "https://service.zju.edu.cn/favicon.ico",
+          "icon": "https://zjuers.com/welcome/assets/%E6%A0%A1%E5%BE%BD.png",
           "title": "综合服务",
           "url": "http://zhfw.zju.edu.cn/"
         },
         {
           "_syncId": "ce912ce7-9f1c-4c99-a006-0c9af8c18e19",
-          "icon": "https://service.zju.edu.cn/favicon.ico",
+          "icon": "https://zjuers.com/welcome/assets/%E6%A0%A1%E5%BE%BD.png",
           "title": "信电学院",
           "url": "http://www.isee.zju.edu.cn/51183/list.psp"
         },
         {
           "_syncId": "1093d4af-8fe6-4c31-854a-df90fe3b307a",
-          "icon": "https://service.zju.edu.cn/favicon.ico",
+          "icon": "https://zjuers.com/welcome/assets/%E6%A0%A1%E5%BE%BD.png",
           "title": "信通系",
           "url": "http://www.ice.zju.edu.cn/"
         },
         {
           "_syncId": "6fba7e65-6932-46a9-812b-ab875e9b4c4e",
-          "icon": "https://service.zju.edu.cn/favicon.ico",
+          "icon": "https://zjuers.com/welcome/assets/%E6%A0%A1%E5%BE%BD.png",
           "title": "图书馆",
           "url": "https://libweb.zju.edu.cn/"
         },
         {
           "_syncId": "c209826a-d75e-4e0c-b012-a6b77fb4b89d",
-          "icon": "https://service.zju.edu.cn/favicon.ico",
+          "icon": "https://zjuers.com/welcome/assets/%E6%A0%A1%E5%BE%BD.png",
           "title": "校园地图",
           "url": "https://map.zju.edu.cn/"
         },
         {
           "_syncId": "103fef1e-cd0b-4590-9578-16f6a20ac0db",
-          "icon": "https://service.zju.edu.cn/favicon.ico",
+          "icon": "https://zjuers.com/welcome/assets/%E6%A0%A1%E5%BE%BD.png",
           "title": "WebVPN",
           "url": "https://webvpn.zju.edu.cn/login"
         },
         {
           "_syncId": "adec771b-0c99-4360-bd72-cbfdb4602c68",
-          "icon": "https://service.zju.edu.cn/favicon.ico",
+          "icon": "https://zjuers.com/welcome/assets/%E6%A0%A1%E5%BE%BD.png",
           "title": "网费",
           "url": "https://myvpn.zju.edu.cn/"
         },
         {
           "_syncId": "fa359614-c059-4bc1-9f2f-4476e02f8041",
-          "icon": "https://service.zju.edu.cn/favicon.ico",
+          "icon": "https://zjuers.com/welcome/assets/%E6%A0%A1%E5%BE%BD.png",
           "title": "正版软件",
           "url": "http://ms.zju.edu.cn/"
         }
